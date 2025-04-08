@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "sandysniffers",
+	"version": "${version}",
+	"name": "Sandy Sniffers",
+	"description": "Makes sniffers sniff up sand, among other things. Also makes them able to sniff on sand.",
+	"authors": [
+		"joshua3504"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/sandysniffers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.joshua3504.sandysniffers.SandySniffers"
+		],
+		"fabric-datagen": [
+			"net.joshua3504.sandysniffers.SandySniffersDataGenerator"
+		],
+		"client": [
+			"net.joshua3504.sandysniffers.SandySniffersClient"
+		]
+	},
+	"mixins": [
+		"sandysniffers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
