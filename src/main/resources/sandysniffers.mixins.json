@@ -3,7 +3,8 @@
 	"package": "net.joshua3504.sandysniffers.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"SnifferSandMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
