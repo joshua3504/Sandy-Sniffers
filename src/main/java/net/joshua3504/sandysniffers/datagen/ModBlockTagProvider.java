@@ -16,6 +16,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.SNIFFER_DIGGABLE_BLOCK)
-                .add(Blocks.SAND);
+                .add(Blocks.SAND)
+                .add(Blocks.RED_SAND);
     }
 }

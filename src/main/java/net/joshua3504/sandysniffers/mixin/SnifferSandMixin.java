@@ -42,6 +42,11 @@ public abstract class SnifferSandMixin {
                         new ItemStack(Items.SAND, (int) (Math.random() * 4) + 1));
                 itemEntity.setToDefaultPickupDelay();
                 serverWorld.spawnEntity(itemEntity);
+            } else if (serverWorld.getBlockState(digPos).getBlock().equals(Blocks.RED_SAND)) {
+                ItemEntity itemEntity = new ItemEntity(serverWorld, digPos.getX(), digPos.getY() + 1, digPos.getZ(),
+                        new ItemStack(Items.RED_SAND, (int) (Math.random() * 4) + 1));
+                itemEntity.setToDefaultPickupDelay();
+                serverWorld.spawnEntity(itemEntity);
             }
         }
     }
